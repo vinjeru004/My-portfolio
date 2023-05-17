@@ -1,24 +1,37 @@
- 
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+header{
+    color:antiquewhite;
+    background-color: darksalmon;
+} 
 h1{
     font-size: larger;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
     font-size: x-large;
-    color: darkgoldenrod;
+    color:rgb(230, 12, 59);
 }
+p{
+    color: darksalmon;
+}
+
 ul {
 list-style-type: none;
 overflow: hidden;
 background-color: #333;
+display: inline;
 }
 
 li {
 float: left;
+    
 }
 
 li a {
 display: block;
-color: white;
+color:darkred;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
@@ -26,4 +39,9 @@ text-decoration: none;
 
 li a:hover {
 background-color: #111;
+color: darkred;
+}
+footer{
+    background-color: rgb(142, 166, 216);
+    color:darkslategray;
 }
