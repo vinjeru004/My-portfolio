@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+      p{
+        color: rgb(36, 9, 61);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="projects.html"><i class="fa fa-fw fa-search"></i>Projects</a> 
+        <a href="skills.html"><i class="fa fa-fw fa-envelope"></i>Skills</a> 
+        <a href="contact.html"><i class="fa fa-fw fa-user"></i>Contact</a>
+      </div>
+      <br>
+      <p>It is a fact that a reader or viewer will be attracted to content after taking <br>
+        a look at it's layout and outlook. This is why you should get your deal done done by 
+        <br>someone who can make that reality</p>
+      <br>
+      <div class="greetings_container">DEMO TEXT</div>
+    
+      <script src="script1.js"></script><br>
+  
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>  
+      </div> 
+      <br>
+      
+  
+    <div class="slideshow-container" style="text-align: end;">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+        <img src="blackgirl1.jpg" style="width: 20%;">
+       <div class="text"></div> 
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+    <img src="blacklady1.jpg" style="width: 20%;">
+   <div class="text"></div> 
+</div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+    <img src="pro6.jpg" style="width: 20%;">
+<div class="text"></div> 
+</div>
+
+<div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+<img src="pro3.jpg" style="width: 20%;">
+<div class="text"></div> 
+</div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+    <img src="pro5.jpg" style="width: 20%;">
+<div class="text"></div> 
+</div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+    <img src="blackgirl2.jpg" style="width: 20%;">
+<div class="text"></div> 
+</div>
+</div>
+</br>
+<div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Malawi">Malawi</option>
+        <option value="Zambia">Zambia</option>
+        <option value="botswana">Botswana</option>
+        <option value="South Africa">South Africa</option>
+        <option value="other">other</option>
+      </select>
+  <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</br>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+</body>
+</html>
