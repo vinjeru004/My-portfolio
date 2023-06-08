@@ -41,7 +41,7 @@
 
     <div class="form-container">
 <p><b>Verify your details</b></p><br>
-    <form name="myForm" action="portfolio.php" onsubmit="return validateForm()"  method="post">
+    <form name="myForm" action="portfolio.php" method="post">
       <label for="username">Username</label> 
       <input type="text" id="username" name="Username"></br>
 

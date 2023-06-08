@@ -86,7 +86,7 @@
 </div>
 </br>
 <div class="container">
-    <form action="portfolio1.php" method="post">
+    <form action="portfolio.php" method="post">
       <label for="name">Name</label>
       <input type="text" id="name" name="Name" placeholder="Your name.."><br>
   
