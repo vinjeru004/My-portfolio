@@ -37,11 +37,11 @@
 </br>
     <p> Need to get in touch with me? Either fill out the<br>
          form with your inquiry or find me through any of the social-<br>
-         media sites in the header up top.</p>
+         media sites in the header up top.</p><br>
 
     <div class="form-container">
 <p><b>Verify your details</b></p><br>
-    <form name="myForm" action="portfolio.php" method="post">
+    <form name="myForm" action="portfolio2.php" onsubmit="return validateForm()"  method="post">
       <label for="username">Username</label> 
       <input type="text" id="username" name="Username"></br>
 
